@@ -1,0 +1,16 @@
+package com.wipro.project.entity;
+
+import java.time.LocalDate;
+
+import com.wipro.project.enums.Gender;
+
+public class Patient {
+	private Long id;
+	private String name;
+	private LocalDate DOB;
+	private Gender gender;
+	private String address;
+	private Long contactInfo;
+	private int weight;
+	private int height;
+}

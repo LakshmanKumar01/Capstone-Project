@@ -1,0 +1,81 @@
+package com.wipro.project.entity;
+
+import java.time.LocalDate;
+
+import com.wipro.project.enums.Gender;
+
+public class Patient {
+	private Long id;
+	private String name;
+	private LocalDate DOB;
+	private Gender gender;
+	private String address;
+	private Long contactInfo;
+	private int weight;
+	private int height;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public LocalDate getDOB() {
+		return DOB;
+	}
+
+	public void setDOB(LocalDate dOB) {
+		DOB = dOB;
+	}
+
+	public Gender getGender() {
+		return gender;
+	}
+
+	public void setGender(Gender gender) {
+		this.gender = gender;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public Long getContactInfo() {
+		return contactInfo;
+	}
+
+	public void setContactInfo(Long contactInfo) {
+		this.contactInfo = contactInfo;
+	}
+
+	public int getWeight() {
+		return weight;
+	}
+
+	public void setWeight(int weight) {
+		this.weight = weight;
+	}
+
+	public int getHeight() {
+		return height;
+	}
+
+	public void setHeight(int height) {
+		this.height = height;
+	}
+
+}

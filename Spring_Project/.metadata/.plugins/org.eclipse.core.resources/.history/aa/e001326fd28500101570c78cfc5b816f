@@ -1,0 +1,7 @@
+package com.wipro.project.entity;
+
+public class MedicalRecords {
+	private Long id;
+	private String description;
+	private String tretedDoctor;
+}

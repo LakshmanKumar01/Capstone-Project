@@ -1,0 +1,114 @@
+package com.wipro.project.entity;
+
+import java.time.LocalDate;
+import java.util.List;
+
+import com.wipro.project.enums.Gender;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
+public class Patient {
+	
+	@Id
+	@GeneratedValue (strategy = GenerationType.IDENTITY)
+	private Long id;
+	private String name;
+	private LocalDate DOB;
+	private Gender gender;
+	private String address;
+	private Long contactInfo;
+	private int weight;
+	private int height;
+	private List<MedicalRecords> records;
+
+	public Patient(Long id, String name, LocalDate dOB, Gender gender, String address, Long contactInfo, int weight,
+			int height, List<MedicalRecords> records) {
+		super();
+		this.id = id;
+		this.name = name;
+		DOB = dOB;
+		this.gender = gender;
+		this.address = address;
+		this.contactInfo = contactInfo;
+		this.weight = weight;
+		this.height = height;
+		this.records = records;
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public LocalDate getDOB() {
+		return DOB;
+	}
+
+	public void setDOB(LocalDate dOB) {
+		DOB = dOB;
+	}
+
+	public Gender getGender() {
+		return gender;
+	}
+
+	public void setGender(Gender gender) {
+		this.gender = gender;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public Long getContactInfo() {
+		return contactInfo;
+	}
+
+	public void setContactInfo(Long contactInfo) {
+		this.contactInfo = contactInfo;
+	}
+
+	public int getWeight() {
+		return weight;
+	}
+
+	public void setWeight(int weight) {
+		this.weight = weight;
+	}
+
+	public int getHeight() {
+		return height;
+	}
+
+	public void setHeight(int height) {
+		this.height = height;
+	}
+
+	public List<MedicalRecords> getRecords() {
+		return records;
+	}
+
+	public void setRecords(List<MedicalRecords> records) {
+		this.records = records;
+	}
+
+}
