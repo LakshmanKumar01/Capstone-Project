@@ -1,5 +1,0 @@
-package com.wipro.project.service;
-
-public interface PatientService {
-
-}
